@@ -17,9 +17,9 @@ def generate_launch_description():
     with open(urdf_file, 'r') as file:
         robot_description_content = file.read()
         
-    include_rviz_launch = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(rviz_launch_path)
-    )
+    #include_rviz_launch = IncludeLaunchDescription(
+    #   PythonLaunchDescriptionSource(rviz_launch_path)
+    #)
     
     gazebo = IncludeLaunchDescription(
     PythonLaunchDescriptionSource(
@@ -54,5 +54,5 @@ def generate_launch_description():
         robot_state_publisher_node,
         spawn_entity_node,
         teleop_node,
-        include_rviz_launch,
+        #include_rviz_launch,
     ])

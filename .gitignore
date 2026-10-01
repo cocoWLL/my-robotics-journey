@@ -1,9 +1,14 @@
-# 忽略 VS Code C/C++ 產生的本機資料庫快取
-.vscode/browse.vc.db*
-.vscode/*.log
-
-# 忽略 ROS 2 編譯產生的暫存資料夾（重要防呆）
+# ROS 2 build artifacts
 build/
 install/
 log/
-.vscode/
+.colcon/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code local cache
+.vscode/browse.vc.db*
+.vscode/*.log
