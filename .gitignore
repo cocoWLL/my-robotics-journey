@@ -12,3 +12,4 @@ __pycache__/
 # VS Code local cache
 .vscode/browse.vc.db*
 .vscode/*.log
+.vscode/
